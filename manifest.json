@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Boost Button",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "./icons/icon01-16.png",
+    "48": "./icons/icon01-48.png",
+    "128": "./icons/icon01-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/feed/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
